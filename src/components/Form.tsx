@@ -16,7 +16,7 @@ export default function Form() {
     if (searchInput) { // ada isinya
       setPrevSearchInput(searchInput);
       try {
-        const res = await fetch(`http://103.49.239.152:8000/threads`, {
+        const res = await fetch(`/api`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
